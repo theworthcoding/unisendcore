@@ -1,0 +1,41 @@
+{
+    "name": "theworthcoding/unisendcore",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Suraj Jadhav",
+            "email": "suraj@worthcoding.com",
+            "homepage": "https://worthcoding.com"
+        }
+    ],
+    "homepage": "https://github.com/theworthcoding/unisendcore",
+    "keywords": ["Laravel", "Unisendcore"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Theworthcoding\\Unisendcore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Theworthcoding\\Unisendcore\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Theworthcoding\\Unisendcore\\UnisendcoreServiceProvider"
+            ],
+            "aliases": {
+                "Unisendcore": "Theworthcoding\\Unisendcore\\Facades\\Unisendcore"
+            }
+        }
+    }
+}
